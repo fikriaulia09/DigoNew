@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    app:passwordToggleEnabled="true"
+    android:background="@drawable/bglogin"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="179dp"
+        android:layout_height="77dp"
+        android:background="@drawable/digo_logo"
+        android:layout_marginVertical="170dp"
+        android:layout_marginHorizontal="130dp"
+        />
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-108dp"
+        android:hint="Nama Pengguna"
+        android:textColorHint="#EEEEEE" />
+
+
+    <EditText
+        android:id="@+id/passwrd"
+        android:layout_width="289dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/userid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:textColorHint="#EEEEEE" />
+
+    <TextView
+        android:id="@+id/lupapasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password"
+        android:textColor="#F9F9F9"
+        android:textStyle="italic"
+        android:layout_below="@id/passwrd"
+        android:layout_marginLeft="63dp"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/lupapasswd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:background="@drawable/button_orange"
+        android:text="Masuk Akun Saya" />
+
+    <Button
+        android:id="@+id/garisgaguna"
+        android:layout_width="289dp"
+        android:layout_height="13dp"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        />
+
+
+    <Button
+        android:id="@+id/buatakun"
+        android:layout_width="289dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/garisgaguna"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/button_putih"
+        android:clickable="true"
+        android:text="Daftar Akun Baru"
+        android:alpha="0.50" />
+
+
+</RelativeLayout>
